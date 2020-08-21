@@ -1,0 +1,60 @@
+# jemdoc: menu{MENU}{index.html}
+= Chiwei Yan 鄢驰为
+
+~~~
+{}{img_left}{chiwei.jpg}{Chiwei}{400}{300}{chiwei.jpg}
+*Chiwei Yan*
+
+Assistant Professor
+
+Department of Industrial and Systems Engineering
+
+University of Washington, Seattle
+~~~
+
+== About Me
+
+I am an Assistant Professor of Operations Research in the [https://ise.uw.edu Department of Industrial and Systems Engineering] at [https://www.washington.edu/ the University of Washington, Seattle]. Previously, I was a postdoctoral researcher (2019-2020) and a senior data scientist (2017-2019) at the [https://marketplace.uber.com/ marketplace optimization group] at Uber where I designed current version of [https://marketplace.uber.com/pricing/surge-pricing rider surge pricing] algorithm. #It balances demand and supply in real-time across 900+ global markets.
+
+I received my Ph.D. from the [http://orc.mit.edu/ Operations Research Center] at [web.mit.edu MIT] in 2017 and  my undergraduate degree (with summa cum laude) in [http://www.ie.tsinghua.edu.cn/eng/ Industrial Engineering] from [http://www.tsinghua.edu.cn/publish/thu2018en/index.html Tsinghua University] in 2012.
+
+I am generally interested in /*transportation and logistics systems*/, with a recent focus on emerging problems in /*sharing economy*/ and /*online platforms*/. My work aims to rigorously study fundamental properties of these problems and propose (data-driven) practical solutions for implementation. When analyzing these problems, I am broadly interested in tools from optimization, game theory, stochastic modeling and statistics. 
+
+
+
+#== Recent News
+
+#- May. 2020, Two preprints on matching in two-sided markets, e.g. ride-hailing and freelancing platforms: [https://arxiv.org/abs/2005.10728 Matching Queues with Reneging: a Product Form Solution] and [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives]
+
+#- Dec. 2019, New preprint on choice-based network design: [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3513164 Choice-Based Airline Schedule Design and Fleet Assignment: A Decomposition Approach].
+
+#- May 2019, Our paper [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 Estimating Primary Demand in Bike-Sharing Systems] is among the finalists in POMS-JD.com Best Data-Driven Research Paper Competition.
+
+#- Nov. 2018, My dissertation is recognized as First Place of [https://www.informs.org/Recognizing-Excellence/Community-Prizes/Aviation-Applications/Aviation-Applications-Dissertation-Prize Best Dissertation Award] by the Aviation Application Section of INFORMS and Honorable Mention (Second Place) of [https://www.informs.org/Recognizing-Excellence/Community-Prizes/Transportation-Science-and-Logistics-Section/TSL-Dissertation-Prize Best Dissertation Award] by the Transportation Science and Logistics Society of INFORMS.
+
+#- Oct. 2018, New article on [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3258234 Dynamic Pricing and Matching in Ride-Hailing Platforms] is available now. Learn our perspective on the future of pricing and matching technologies in ride-hailing.
+
+#- Nov. 2017, Our paper [https://pubsonline.informs.org/doi/10.1287/trsc.2015.0657 Robust Aircraft Routing] is recognized as the [https://www.informs.org/Recognizing-Excellence/Community-Prizes/Transportation-Science-and-Logistics-Section/Outstanding-Paper-in-Air-Transportation Outstanding Paper in Air Transportation] by the Transportation Science and Logistics Society of INFORMS.
+
+#- Aug. 2017, I successfully defended my dissertation on [https://dspace.mit.edu/bitstream/handle/1721.1/113435/1020068150-MIT.pdf?sequence=1 Airline Scheduling and Air Traffic Control: Incorporating Uncertainty and Passenger and Airline Preferences].
+
+#- May 2017, Our project on [http://web.mit.edu/cygoh/www/hubway2017/ Hubway Stations Availability] won [https://www.bluebikes.com/blog/and-the-2017-hubway-data-challenge-winners-are Best Data Exploration Tool] in the [http://hubwaydatachallenge.org/ 2017 Hubway Data Challenge].
+
+
+
+#Here are some *text* /features/. I could [http://cvxmod.net/ link somewhere] or insert a raw link to another page like [download.html]. I could use +monospace+, too.
+
+#I could write special characters like \#, \$ and \+ by just using a backslash (\\) in front of those characters. Or automatically detect an [www@jemnz.com email address].
+
+#~~~
+#Save the file as +index.jemdoc+, say, and simply call +jemdoc index+ (after [download.html downloading jemdoc], of course).
+#~~~
+
+== Contact
+
+
+[chiwei@uw.edu chiwei@uw.edu]
+
+#77 Massachusetts Avenue
+
+#Bldg. E40-103, Cambridge, MA 02139

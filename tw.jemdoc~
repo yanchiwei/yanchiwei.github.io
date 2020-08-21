@@ -1,0 +1,12 @@
+# jemdoc: menu{MENU}{tw.html}
+= Chiwei Yan 鄢驰为
+
+== Teaching Experience
+
+- *[http://stellar.mit.edu/S/course/15/sp16/15.053/ 15.053 - Optimization Methods in Business Analytics - Spring 2015 \& 2016]* (TA) \n Undergraduate core course for Business Analytics major at MIT Sloan School of Management taught by [http://jorlin.scripts.mit.edu/ Professor James Orlin] (100-150 students) \n Responsibilities include: teaching weekly recitation, writing homework and exam questions, and guiding students' projects. \n *Course Description:* Introduces optimization methods with a focus on modeling, solution techniques, and analysis. Covers linear programming, network optimization, integer programming, and decision trees. Applications to logistics, manufacturing, data analysis, transportation, marketing, project management, and finance. Includes a project in which student teams select and solve an optimization problem (possibly a large-scale problem) of practical interest.
+
+- *[https://github.com/joehuchette/OR-software-tools-2015 15.S60 - Software Tools for Operations Research - IAP 2015]* (Session Instructor) \n Student-organized IAP course \n Responsibilities include: teaching one lecture on column generation technique, preparing slides and designing case study. \n *Course Description:* The "big data revolution" has placed added emphasis on computational techniques in Operations Research (OR). Large-scale optimization, data analysis and visualization are now commonplace among researchers and practitioners alike. More than ever, there is a need not only to develop new techniques, but also to implement and use them. This course is a multi-session workshop focusing on software tools specific to the practice of OR. We concentrate on the mechanics of using common software to apply specific methodologies. The goal of the course is to provide a baseline technical knowledge for modern research in OR, including the computational aspects of: data manipulation/analysis, visualization, graphs, and optimization. Class participation and individual hands-on coding are stressed in each session.
+
+== Working Experience
+
+- *[http://www.sabre.com/ Sabre Corporation, Southlake TX]* (Summer 2015) \n *Research Intern - Corporate Research Group* \n Worked on choice-based network revenue management and airline loyalty programs design. Proposed a practical formulation that allows efficient computation of the optimal seating capacity to be allocated to frequent flyer points redemption based on consumer transaction data.

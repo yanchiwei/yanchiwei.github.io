@@ -1,0 +1,42 @@
+# jemdoc: menu{MENU}{index.html}
+= Chiwei Yan 鄢驰为
+
+~~~
+{}{img_left}{chiwei.jpg}{Chiwei}{400}{300}{chiwei.jpg}
+*Chiwei Yan*
+
+PhD Candidate
+
+Operations Research Center
+
+Massachusetts Institute of Technology
+~~~
+
+== About Me
+
+
+I'm currently a PhD Candidate at the [http://web.mit.edu/orc/www/ Operations Research Center] at [http://www.mit.edu MIT]. My research advisor is [https://cee.mit.edu/barnhart Professor Cynthia Barnhart]. I am the recipient of 2016-2017 UPS PhD Fellowship.
+
+Before coming to MIT, I obtained my Bachelor's degree with summa cum laude in [http://www.ie.tsinghua.edu.cn/eng/ Industrial Engineering] from [http://www.tsinghua.edu.cn/publish/newthuen/index.html Tsinghua University], Beijing, in 2012, and my undergraduate thesis advisor was [http://www.ie.tsinghua.edu.cn/teacher/eview.php?Tid=52 Professor Hai Jiang].
+
+
+
+#Here are some *text* /features/. I could [http://cvxmod.net/ link somewhere] or insert a raw link to another page like [download.html]. I could use +monospace+, too.
+
+#I could write special characters like \#, \$ and \+ by just using a backslash (\\) in front of those characters. Or automatically detect an [www@jemnz.com email address].
+
+#~~~
+#Save the file as +index.jemdoc+, say, and simply call +jemdoc index+ (after [download.html downloading jemdoc], of course).
+#~~~
+
+== Contact
+
+
+[chiwei@mit.edu chiwei@mit.edu]
+
+77 Massachusetts Avenue
+
+Bldg. E40-103, Cambridge, MA 02139
+~~~
+{}{img_left}{linkedin_logo.jpg}{Chiwei}{150}{41}{https://www.linkedin.com/in/chiwei-yan-b1b70b36}
+~~~

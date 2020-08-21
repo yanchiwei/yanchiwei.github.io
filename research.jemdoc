@@ -1,0 +1,70 @@
+# jemdoc: menu{MENU}{research.html}
+= Chiwei Yan 鄢驰为
+
+== Research
+=== Interests
+
+*Transportation and Logistics Systems, Sharing Economy and Marketplace Design*
+
+=== Submitted Papers
+
+- Castro, F., Frazier, P., Ma, H., Nazerzadeh, H. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], under review, 2020.
+
+- Yan, C., Barnhart, C. and Vaze, V., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3513164 Choice-Based Airline Schedule Design and Fleet Assignment: A Decomposition Approach], under review, 2019.
+
+- Goh, CY, Yan, C. and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing], */Operations Research/*, major revision, 2019. \[[http://web.mit.edu/cygoh/www/hubway2017/ Viz]\]
+  -- An earlier version of this work was titled: “Estimating Primary Demand in Bike-Sharing Systems”
+	-- Finalist, POMS-JD.com Best Data-Driven Research Paper Competition, 2019
+  -- Best Data Exploration Award, Hubway Data Challenge, 2017
+
+=== Journal Publications
+
+- Castro, F., Nazerzadeh, H. and Yan, C., [https://link.springer.com/article/10.1007/s11134-020-09662-y Matching Queues with Reneging: A Product Form Solution], /*Queueing Systems*/, 2020. \[[https://arxiv.org/abs/2005.10728 arXiv]\]
+
+- Yan, C., Zhu, H., Korolko, N. and Woodard, D., [https://onlinelibrary.wiley.com/doi/full/10.1002/nav.21872 Dynamic Pricing and Matching in Ride-Hailing Platforms], */Naval Research Logistics/*, 2019. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3258234 SSRN]\]
+
+- Yan, C., Swaroop, P., Ball, M.O., Barnhart, C. and Vaze, V., [https://www.sciencedirect.com/science/article/pii/S0167637718305194 Majority Judgment over a Convex Candidate Space], */Operations Research Letters/*, 47(4): 317-325, 2019. \[[papers/mj_orl.pdf PDF]\]
+  -- Earlier version of this paper won Honorable Mention in 2012 INFORMS Public Sector Operations Research Best Paper Competition.
+
+- Yan, C., Vaze, V. and Barnhart, C., [https://www.sciencedirect.com/science/article/pii/S0968090X18302195 Airline-Driven Ground Delay Programs: A Benefits Assessment], */Transportation Research Part C: Emerging Technologies/*, 89: 268-288, 2018. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3014176 SSRN]\]
+
+- Yan, C. and Kung, J., [https://pubsonline.informs.org/doi/10.1287/trsc.2015.0657 Robust Aircraft Routing], */Transportation Science/*, 52(1): 118-133, 2018. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2518028 SSRN]\]\[[https://github.com/yanchiwei/RobustAR_datasets Data]\]\[[https://pubsonline.informs.org/doi/suppl/10.1287/trsc.2015.0657/suppl_file/trsc.2015.0657-sm.pdf Supplement]\]
+  -- Outstanding Paper in Air Transportation, INFORMS Transportation Science and Logistics Society, 2018. 
+  -- First Place, AGIFORS Anna Valicek Award for Innovative Research in Airline Operations Research, 2015.
+  -- Best Presentation Award, INFORMS Aviation Application Section, 2015.
+- Yan, C., Vaze, V., Vanderboll, A. and Barnhart, C., [http://www.sciencedirect.com/science/article/pii/S0965856415002682 Tarmac Delay Policies: A Passenger-Centric Analysis], */Transportation Research Part A: Policy and Practice/*, 83: 42-62, 2016. \[[https://dspace.mit.edu/bitstream/handle/1721.1/100800/ICAT-2016-01.pdf?sequence=1&isAllowed=y PDF]\]
+  -- [http://www.wsj.com/articles/stranded-at-the-airport-1452125387 Stranded at the Airport], The Wall Street Journal, January 6, 2016
+  -- [http://www.latimes.com/business/la-fi-airline-tarmac-rule-20151231-story.html Airline tarmac rule leads to more passenger delays, study concludes], Los Angeles Times, January 3, 2016
+  -- [http://www.chicagotribune.com/news/opinion/chapman/ct-flight-delays-tarmac-passengers-perspec-0107-20160107-column.html Why airport torture only got worse], Chicago Tribune, January 7, 2016
+  -- [http://www.bloomberg.com/politics/articles/2015-12-21/late-flights-rose-after-u-s-bid-to-stem-traveler-tarmac-holdups Late Flights Rose After U.S. Bid to Stem Traveler Tarmac Holdups], Bloomberg Business, December 21, 2015
+  -- [http://fortune.com/2016/01/06/airline-flight-delays-tarmac/ New Rules to Prevent Airline Delays Are Backfiring], Fortune, January 6, 2016
+  -- [http://www.usatoday.com/story/travel/flights/todayinthesky/2016/01/05/tarmac-delay-rule/78310176/ Study: Tarmac delay rule just makes things worse], USA Today, January 6, 2016
+- Yan, C., Jiang, H. and Xie, S., [http://www.sciencedirect.com/science/article/pii/S0191261513002208 Capacity optimization of an isolated intersection under the phase swap sorting strategy], */Transportation Research Part B: Methodological/*, 60: 85-106, 2014. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2261809 SSRN]\]\[[https://www.youtube.com/watch?v=a4RE-iFuhQc Video]\]
+
+=== Conference Proceedings
+
+- Ball, M.O., Swaroop, P., Barnhart C., Yan, C., Hansen, M., Kang, L., Liu, Y. and Vaze, V., [http://www.atmseminarus.org/seminarContent/seminar12/papers/12th_ATM_RD_Seminar_paper_132.pdf Service Level Expectation Setting for Air Traffic
+Flow Management: Practical Challenges and Benefits Assessment], Twelfth USA/Europe Air Traffic Management Research and Development Seminar (ATM2017), Seattle, 2017.
+
+=== Technical Reports
+
+- Yan, C. and Yang, L., [http://www.optimization-online.org/DB_HTML/2016/06/5473.html Mixed-integer Programming Based Approaches for the Movement Planner Problem: Model, Heuristics and Decomposition], 2012.
+  -- First Place, 2012 INFORMS Railway Application Section Problem Solving Competition.
+
+=== Dissertation
+
+- [https://dspace.mit.edu/handle/1721.1/113435?show=full Airline scheduling and air traffic control : incorporating uncertainty and passenger and airline preferences].
+  -- Honorable Mention (Second Place), Best Dissertation Award, INFORMS Transportation Science and Logistics Society, 2018
+  -- First Place, Best Dissertation Award, INFORMS Aviation Application Section, 2018
+
+=== Filed Patents
+
+- Method and System for Managing Dynamic Loyalty Redemption, filed on March 26th 2018, with Richard Ratliff, Guillermo Gallego and Balakrishnan Vinod. \[[https://www.sabre.com/insights/innovation-hub/prototypes/loyalty-redemption-model/ Video]\]
+- Method and System for Managing Overbooking, filed on July 6th 2018, with Richard Ratliff, Guillermo Gallego and Balakrishnan Vinod.
+
+=== Service
+- Program Committee, INFORMS TSL Second Triennial Conference, 2020
+- INFORMS Aviation Application Section, Cluster Chair, 2019
+- INFORMS Aviation Application Section, Newsletter Editor, 2017
+- *Reviewer*: /Management Science/, /Transportation Science/, /Transportation Research Part B: Methodological/, /Transportation Research Part C: Emerging Technologies/, /Transportation Research Part E: Logistics and Transportation Review/, /IEEE Transactions on Intelligent Transportation Systems/, /Computers and Industrial Engineering/, /International Journal of Production Research/
+
