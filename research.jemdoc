@@ -7,6 +7,8 @@
 
 == Submitted Papers
 
+- Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., Randomized FIFO Mechanisms, 2021.
+
 - Castro, F., Frazier, P., Ma, H., Nazerzadeh, H. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], under review, 2020.
 
 - Yan, C., Barnhart, C. and Vaze, V., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3513164 Choice-Based Airline Schedule Design and Fleet Assignment: A Decomposition Approach], under revision, 2020. \[[https://github.com/yanchiwei/Choice_FAM_datasets/ Data]\]
@@ -42,7 +44,7 @@
 
 == Conference Proceedings
 
-- Ball, M.O., Swaroop, P., Barnhart C., Yan, C., Hansen, M., Kang, L., Liu, Y. and Vaze, V., [http://www.atmseminarus.org/seminarContent/seminar12/papers/12th_ATM_RD_Seminar_paper_132.pdf Service Level Expectation Setting for Air Traffic
+- Ball, M.O., Swaroop, P., Barnhart C., Yan, C., Hansen, M., Kang, L., Liu, Y. and Vaze, V., [http://www.atmseminar.org/seminarContent/seminar12/papers/12th_ATM_RD_Seminar_paper_132.pdf Service Level Expectation Setting for Air Traffic
 Flow Management: Practical Challenges and Benefits Assessment], Twelfth USA/Europe Air Traffic Management Research and Development Seminar (ATM2017), Seattle, 2017.
 
 == Technical Reports
