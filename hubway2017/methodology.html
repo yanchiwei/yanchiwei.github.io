@@ -1,0 +1,48 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Methodology - Hubway Stations Availability</title>
+  <meta name="description" content="Hubway Stations Availability - Methodology">
+  <meta name="author" content="Chong Yang Goh, Chiwei Yan">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700">
+  <link rel="stylesheet" href="css/subpage.css">
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <h1>Methodology</h1>
+    <hr />
+    <div id="content">
+      <h2>1. How are the numbers of displaced and lost rides estimated?</h2>
+      <p>These numbers are estimated using a <em>ranking-based choice model</em>, which is a statistical model of how an arriving customer chooses where to pick up a bike from among a list of ranked preferences. By fitting historical data (of weekdays between 2016/06/01 and 2016/08/31) to the model, we can then use it to predict how a rider may behave in the event that his/her preferred stations have run out of bikes. This allows us to estimate, retrospectively, how many rides might have been displaced or lost within the 3-month period due to station stock-outs.</p>
+
+      <h2>2. What behavioral assumptions are made in the model?</h2>
+      <p>We assume that each individual rider's decision&mdash;whether to choose a pick-up station, if available, or to give up otherwise&mdash;is completely determined by his/her own ranking of station choices. This ranking may reflect convenience of access, closeness to the intended destination, and other exogenous factors such as weather.</p>
+
+      <p>For example, an MIT graduate student commuting to the main campus from his dorm on Albany St. may rank two nearby choices in order of walking distance: [ <em>MIT Pacific St., MIT Vassar St.</em> ]; a BU student living in Kenmore Square going to Cambridge might have a different ranking in mind: [ <em>Kenmore Sq., Beacon St. and Mass. Ave.</em> ]. If the first-choice station has no bike available, the student will either choose the next available station on the list (the pick-up is <em>displaced</em>), or give up using the service if there is no alternative (the pick-up is <em>lost</em>).</p>
+
+      <p>In the model, we assume that each rider will only consider at most two alternatives within 1km from his first choice. Also, that these behaviors are homogenous throughout the time period of study. Based on this setup, our algorithm then infers a probabilistic distribution over all possible station choice rankings that best explains the data.</p>
+
+      <h2>3. Can a rider’s drop-off (bike-returning) behaviors be similarly modeled?</h2>
+      <p>Absolutely. Our statistical model can be adapted to drop-off as well. However, we focus on bike pick-ups for this visualization because drop-off behaviors are less complex&mdash;most bikes on loan are eventually returned, so there is no equivalent of lost pick-ups in this case.</p>
+
+      <h2>4. What insights can be drawn from this visualization?</h2>
+      <p>We find several interesting angles that may be worth exploring further:</p>
+      <ul>
+        <li><strong>Interplay between stock-out rates, pick-up displacements and losses</strong>: High stock-out rates don't always entail high pick-up losses. If a station is surrounded by many available alternatives, then pick-ups are more likely to be displaced rather than lost (Example: <em>Franklin St. / Arch St.</em> in the evening). On the other hand, isolated stations can have higher lost pick-ups despite having lower stock-out rates (Example: <em>ID Building West</em> in the evening).</li>
+        <li><strong>Network impact of high-availability stations</strong>: Strategically choosing a small set of stations to be restocked quickly during the peak hours may help absorb displacements from nearby stocked out stations, thereby reducing overall pick-up losses. For example, our analysis reveals that <em>South Station</em>, a highly available station with very low stock-out rates, absorbs a significant number of displaced rides from its surrounding stations during the evening (5pm&ndash;7pm), which may explain why their pick-up losses are low despite having high stock-out rates.</li>
+        <li><strong>Change of displacement patterns over time</strong>: Displacement patterns may reflect shifts in broader commuting behaviors. For example, in the morning between 7am&ndash;9am at <em>Lafayette Sq.</em> at Mass. Ave., most pick-ups displaced from the station end up at <em>MIT Pacific St.</em>&mdash;this may be explained by the fact that many MIT students and staff are traveling in the direction towards the main campus. However, in the evening between 4pm&ndash;6pm, most displacements end up at <em>Central Sq.</em> station instead, which may be due to outbound commutes from the campus.</li>
+      </ul>
+      Try exploring the tool yourself and tell us what you find!
+      <h2>5. More questions?</h2>
+      <p>Contact <a href="mailto:cygoh@mit.edu">Chong Yang Goh</a> and <a href="mailto:chiwei@mit.edu">Chiwei Yan</a>.</p>
+    </div>
+    </div>
+  </div>
+</body>
+</html>

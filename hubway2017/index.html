@@ -1,0 +1,129 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hubway Stations Availability - Summer 2016</title>
+  <meta name="description" content="Hubway Stations Availability">
+  <meta name="author" content="Chong Yang Goh, Chiwei Yan">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat:600|Open+Sans:400,700">
+  <link rel="stylesheet" href="https://code.jquery.com/ui/1.10.4/themes/flick/jquery-ui.css">
+  <link rel="stylesheet" href="css/nanoscroller.css">
+  <link rel="stylesheet" href="css/jquery-ui-slider-pips.css">
+  <link rel="stylesheet" href="css/leaflet.css" />
+  <link rel="stylesheet" href="css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="js/leaflet.js"></script>
+  <script src="js/jquery-ui-slider-pips.min.js"></script>
+  <script src="js/jquery.nanoscroller.min.js"></script>
+  <script src="js/main.js"></script>
+  <!-- Data sources -->
+  <script src="data/stations.json"></script>
+  <script src="data/rides.json"></script>
+  <!--[if lt IE 9]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+  <![endif]-->
+</head>
+
+<body>
+  <div id="wrapper">
+    <div id="header">
+      <div id="rightnav">
+        <p><a href="definitions.html" target="_blank">Definitions</a> <span class="gray">|</span> <a href="methodology.html" target="_blank">Methodology</a></p>
+        <p class="small">All analyses are based on weekday data of Summer 2016 (Jun&ndash;Aug)</p>
+      </div>
+      <h1>Hubway Stations Availability</h1>
+      <h2>How frequently do stations run out of bikes and how are riders affected?</h2>
+    </div>
+    <div id="content">
+      <div class="custom-popup" id="map">
+      </div>
+      <div id="sidebar">
+        <div id="global_sidebar">
+          <div class="side_button" style="background-image: url('images/icon_question_hover.png');">
+            <a href="definitions.html" title="Definitions" target="_blank"> </a>
+          </div>
+          <h3>Summary</h3>
+          <div class="separator"></div>
+          <ul id="global_summary_ul">
+            <li id="global_time_period" style="background-image: url('images/icon_time.png');" class="row row_button" title="The 1-hour time period within which the data is aggregated, covering 3 months from 2016/06/01 to 2016/08/31 and excluding weekends.">
+              <div class="icon_label">Time Period</div>
+              <div class="value"></div>
+            </li>
+            <li id="global_stockout_rate" style="background-image: url('images/icon_stockout.png');" class="row row_button" title="The percentage of time (within this time period) during which a station is out of bikes.">
+              <div class="icon_label">Stockout Rate</div>
+              <div class="value"></div>
+            </li>
+            <li id="global_total_rides" style="background-image: url('images/icon_rider.png');" class="row row_button" title="Total number of ride pick-ups recorded during this time period.">
+              <div class="icon_label">Total Ride Pick-ups</div>
+              <div class="value"></div>
+            </li>
+            <li id="global_spilled_rides" style="background-image: url('images/icon_spill.png');" class="row row_button" title="Estimated no. of pickup-ups that were displaced from the original station because it was empty during this time period. A displacement occurs when a rider whose first choice is unavailable picks up a ride from another available station instead.">
+              <div class="icon_label">Est. Displaced Pick-ups</div>
+              <div class="value"></div>
+            </li>
+            <li id="global_lost_rides" style="background-image: url('images/icon_lost.png');" class="row row_button" title="Estimated no. of pickup-ups that were lost because a station was empty during this time period. A loss occurs when a rider whose preferred choices are unavailable decides not to use the service.">
+              <div class="icon_label">Est. Lost Pick-ups</div>
+              <div class="value"></div>
+            </li>          
+          </ul>
+          <h3 id="global_chart_title">Stockout Rates</h3>
+          <div class="separator"></div>
+          <div class="nano">
+            <div class="nano-content">
+              <ul id="global_attr_ul">
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div id="station_sidebar" class="hidden">
+          <div class="side_button" style="background-image: url('images/icon_question_hover.png');">
+            <a href="definitions.html" title="Definitions" target="_blank"> </a>
+          </div>
+          <h3>Station Summary</h3>
+          <h4 id="station_name"></h4>
+          <div class="separator"></div>
+          <ul id="station_summary_ul">
+            <li id="station_time_period" style="background-image: url('images/icon_time.png');" class="row row_button" title="The 1-hour time period within which the data is aggregated, covering 3 months from 2016/06/01 to 2016/08/31 and excluding weekends.">
+              <div class="icon_label">Time Period</div>
+              <div class="value"></div>
+            </li>
+            <li id="station_stockout_rate" style="background-image: url('images/icon_stockout.png');" class="row row_button" title="The percentage of time (within this time period) during which a station is out of bikes.">
+              <div class="icon_label">Stockout Rate</div>
+              <div class="value"></div>
+            </li>
+            <li id="station_total_rides" style="background-image: url('images/icon_rider.png');" class="row row_button" title="Total number of ride pick-ups recorded during this time period.">
+              <div class="icon_label">Total Ride Pick-ups</div>
+              <div class="value"></div>
+            </li>
+            <li id="station_spilled_rides" style="background-image: url('images/icon_spill.png');" class="row row_button" title="Estimated no. of pickup-ups that were displaced from the original station because it was empty during this time period. A displacement occurs when a rider whose first choice is unavailable picks up a ride from another available station instead.">
+              <div class="icon_label">Est. Displaced Pick-ups</div>
+              <div class="value"></div>
+            </li>
+            <li id="station_lost_rides" style="background-image: url('images/icon_lost.png');" class="row row_button" title="Estimated no. of pickup-ups that were lost because a station was empty during this time period. A loss occurs when a rider whose preferred choices are unavailable decides not to use the service.">
+              <div class="icon_label">Est. Lost Pick-ups</div>
+              <div class="value"></div>
+            </li>          
+          </ul>
+          <h3>Displacement Destinations</h3>
+          <div class="separator"></div>
+          <div class="nano">
+            <div class="nano-content">
+              <ul id="station_displacement_ul">
+              </ul>
+            </div>
+          </div>
+          <div id="button_all_stations" class="backbutton"><a href="#">Back to All Stations</a></div>
+        </div>
+      </div>
+    </div>
+    <div id="slider">
+      <div id="slider-ui"></div>
+    </div>
+    <div id="footer">
+      Maps powered by <a href="http://www.leafletjs.com" target="_blank">Leaflet</a> | Icons retrieved from <a href="http://www.icons8.com" target="_blank">Icons8</a>
+    </div>
+  </div>
+</body>
+</html>
