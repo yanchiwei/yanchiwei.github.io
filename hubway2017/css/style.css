@@ -1,0 +1,249 @@
+body {
+  background: #191919;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: white;
+}
+a:link, a:visited {
+  color: #cdcdcd;
+  text-decoration: none;
+}
+a:hover, a:active {
+  color: #ed1c24;
+  text-decoration: underline;
+}
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 42px;
+  margin-bottom: 0.12em;
+  color: white;
+}
+h2 {
+  font-size: 20px;
+  margin: 0;
+  font-weight: normal;
+  color: #959595;
+}
+#wrapper {
+  position:relative;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  height: 100%;
+  height: auto !important;
+  min-height: 100%;
+}
+#header {
+  margin-top: 40px;
+  height: 100px;
+  width: 100%;
+}
+#rightnav {
+  float: right;
+  text-align: right;
+  margin-top: 32px;
+  font-size: 16px;
+  color: #959595;
+}
+#rightnav p {
+  margin-top: 0.25em;
+  margin-bottom: 0.25em;
+}
+#content {
+  height: 600px;
+  width: 100%;
+  border: 1px solid #4b4b4b;
+  margin-top: 10px;
+}
+#map {
+  float: left;
+  height: 100%;
+  width: 890px;
+}
+#sidebar {
+  float: right;
+  width: 309px;
+  height: 100%;
+  border-left: 1px solid #4b4b4b;
+  background: #262626;
+}
+#sidebar h3 {
+  margin: 16px 0 0 16px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#sidebar h4 {
+  width: 280px;
+  margin: 2px 0 0 16px;
+  font-size: 13px;
+  font-weight: normal;
+  color: #959595;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#sidebar .side_button {
+  float: right;
+  width: 16px;
+  height: 16px;
+  margin-top: 6px;
+  margin-right: 15px;
+  background-position: 0;
+  cursor: pointer;
+}
+#sidebar .side_button:hover {
+  background-position: 100% 0;
+}
+#sidebar a {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+#sidebar .separator {
+  display: block;
+  width: 100%;
+  height: 12px;
+  margin-top: 10px;
+  border-top: 1px solid #4b4b4b;
+}
+#sidebar ul {
+  display: block;
+  list-style-type: none;
+  margin: 0 0 0 15px;
+  padding: 0;
+}
+#sidebar ul > li.row {
+  display: block;
+  margin-bottom: 2px;
+  background-repeat: no-repeat;
+  background-position: 10px 10px;
+  background-color: #1a1a1a;
+  height: 40px;
+  width: 280px;
+}
+#sidebar ul > li.row_button:hover {
+  background-color: #363636;
+  cursor: pointer;
+}
+#sidebar ul > li.row_button_selected {
+  background-color: #4b2929;
+}
+#sidebar div.icon_label {
+  float: left;
+  padding-top: 10px;
+  padding-left: 40px;
+  color: #c2c2c2;
+}
+#sidebar div.value {
+  float: right;
+  padding-top: 8px;
+  padding-right: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+#sidebar div.chart_label {
+  float: left;
+  width: 190px;
+  height: 14px;
+  margin-left: 8px;
+  margin-bottom: 2px;
+  padding-top: 6px;
+  color: #c2c2c2;
+  font-size: 11px;
+  overflow:hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+#sidebar div.chart {
+  clear: left;
+  float: left;
+  margin-left: 8px;
+  height: 6px;
+  width: 190px;
+  border: 1px solid #363636;
+  background-image: url('../images/chart_bg.png');
+  background-repeat: repeat-x;
+}
+#sidebar div.backbutton {
+  float: left;
+  display: block;
+  height: 18px;
+  margin-top: 6px;
+  margin-left: 15px;
+  padding-left: 15px;
+  background-repeat: no-repeat;
+  background-position: 0 4px;
+  background-image: url('../images/icon_back.png');
+}
+#global_sidebar .nano {
+  width: 300px;
+  height: 252px;
+}
+#station_sidebar .nano {
+  width: 300px;
+  height: 210px;
+}
+#slider {
+  position: relative;
+  width: 100%;
+  height: 8px;
+  margin-top: 20px;
+  background: #262626;
+  border: 1px solid #4b4b4b;
+  cursor: pointer;
+}
+#slider-ui.ui-slider {
+  height: 8px;
+  margin: auto;
+  width: 1182px;
+  border: none;
+  background: none;
+}
+#slider-ui.ui-slider .ui-slider-handle {
+  width: 22px;
+  height: 22px;
+  margin-top: -3px;
+  margin-left: -11px;
+  opacity: 0.8;
+  background: #ed1c24;
+  border: 1px solid #4b4b4b;
+  border-radius: 100%;
+  filter: alpha(opacity=70); /* For IE8 and earlier */
+  transition: box-shadow 0.2s ease;
+  cursor: pointer;
+}
+#slider-ui.ui-slider-pips [class*=ui-slider-pip-selected] {
+  color: #ed1c24;
+}
+#slider-ui.ui-slider-pips .ui-slider-pip-selected-2 {
+  color: #ed1c24;
+}
+/* make it easy to see when we hover a label */
+#slider-ui.ui-slider-pips:not(.ui-slider-disabled) .ui-slider-pip:hover .ui-slider-label {
+  color: #ed1c24;
+}
+#slider-ui.ui-slider-pips .ui-slider-pip-inrange {
+  color: #ed1c24;
+}
+#slider-ui.ui-slider-pips [class*=ui-slider-pip-selected] .ui-slider-line,
+#slider-ui.ui-slider-pips .ui-slider-pip-inrange .ui-slider-line {
+  background: #ed1c24;
+}
+#footer {
+  float: right;
+  margin: 64px 0 20px 0;
+  font-size: 13px;
+  color: #555;
+}
+#footer a {
+  color: #777;
+}
+.small {
+  font-size: 14px;
+}
+.gray {
+  color: gray;
+}
+.hidden {
+  display: none;
+}
