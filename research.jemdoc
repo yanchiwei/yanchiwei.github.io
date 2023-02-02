@@ -7,11 +7,11 @@
 
 == Working Papers
 
-- Yan, C. and Ghate, A., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4197493 A Dynamic Model for Airline Fleeting and Scheduling].
+- Yan, C. and Ghate, A., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4197493 A Dynamic Model for Airline Fleeting and Scheduling], under revision.
 
 - Sun, F., Sun, Y., Yan, C. and Jin, L., [https://arxiv.org/abs/2205.08104 Sequential Elimination Contests with All-Pay Auctions].
 
-- Yan, C., Johndrow, J. and Woodard, D., [https://arxiv.org/abs/2112.09993 Statistical Efficiency of Travel Time Prediction].
+- Yan, C., Johndrow, J., Woodard, D. and Sun, Y. [https://arxiv.org/abs/2112.09993 Efficiency of ETA Prediction]. \[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
 
 - Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., [https://arxiv.org/abs/2111.10706 Randomized FIFO Mechanisms], under revision.
   -- Extended abstract accepted in ACM EC'22
