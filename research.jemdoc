@@ -16,7 +16,7 @@
 
 - Yan, C., Johndrow, J., Woodard, D. and Sun, Y. [https://arxiv.org/abs/2112.09993 Efficiency of ETA Prediction]. \[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
 
-- Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., [https://arxiv.org/abs/2111.10706 Randomized FIFO Mechanisms], under revision.
+- Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., [https://arxiv.org/abs/2111.10706 Randomized FIFO Mechanisms].
   -- Extended abstract accepted in ACM EC'22
   -- NBER Market Design Working Group 2021
   -- MSOM Service SIG 2021
@@ -27,8 +27,7 @@
   -- INFORMS TSL Workshop 2021
   -- EC Workshop on People-Centric Systems 2021
 
-- Goh, CY, Yan, C. and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing], under revision. \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
-  -- An earlier version of this work was titled: “Estimating Primary Demand in Bike-Sharing Systems”.
+- Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing], under revision. \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
   -- Finalist, POMS-JD.com Best Data-Driven Research Paper Competition, 2019.
   -- Best Data Exploration Award, Hubway Data Challenge, 2017.
 
