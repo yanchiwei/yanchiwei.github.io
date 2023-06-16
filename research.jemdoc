@@ -8,7 +8,7 @@
 == Working Papers
 
 - Aouad, A., Saritac, O. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4453799 Centralized versus Decentralized Pricing Controls for Dynamic Matching Platforms].
-  -- Extended abstract accepted in ACM EC'23
+  -- ACM Conference on Economics and Computation (EC) 2023
 
 - Yan, C. and Ghate, A., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4197493 A Dynamic Model for Airline Fleeting and Scheduling], under revision.
 
@@ -17,15 +17,13 @@
 - Yan, C., Johndrow, J., Woodard, D. and Sun, Y. [https://arxiv.org/abs/2112.09993 Efficiency of ETA Prediction]. \[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
 
 - Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., [https://arxiv.org/abs/2111.10706 Randomized FIFO Mechanisms], under revision.
-  -- Extended abstract accepted in ACM EC'22
+  -- ACM Conference on Economics and Computation (EC) 2022
   -- NBER Market Design Working Group 2021
   -- MSOM Service SIG 2021
-  -- EC Workshop on Design of Online Platforms 2021
-  -- Marketplace Innovation Workshop 2021
+  -- EC 2021 Workshop on Design of Online Platforms: Frontiers and Challenges 
 
 - Castro, F., Frazier, P., Ma, H., Nazerzadeh, H. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], under revision.
-  -- INFORMS TSL Workshop 2021
-  -- EC Workshop on People-Centric Systems 2021
+  -- EC 2021 Workshop on People-Centric Systems
 
 - Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing]. \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
   -- Finalist, POMS-JD.com Best Data-Driven Research Paper Competition, 2019.
@@ -90,6 +88,7 @@ Flow Management: Practical Challenges and Benefits Assessment], Twelfth USA/Euro
 - eScience Institute/Microsoft Azure 
 
 == Service
+- Committee Chair, INFORMS Transportation Science and Logistics Society Best Student Paper Award, 2023.
 - Vice Chair, Urban Transportation SIG, INFORMS Transportation Science and Logistics Society, 2021 - 2023.
 - Secretary/Treasurer, INFORMS Aviation Applications Section, 2020 - 2022.
 - Program Committee, INFORMS TSL Second Triennial Conference (2020), Tristan2022.
