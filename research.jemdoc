@@ -16,8 +16,6 @@
 
 - Sun, F., Sun, Y., Yan, C. and Jin, L., [https://arxiv.org/abs/2205.08104 Sequential Elimination Contests with All-Pay Auctions].
 
-- Yan, C., Johndrow, J., Woodard, D. and Sun, Y. [https://arxiv.org/abs/2112.09993 Efficiency of ETA Prediction], under major revision. \[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
-
 - Castro, F., Ma, H., Nazerzadeh, H. and Yan, C., [https://arxiv.org/abs/2111.10706 Randomized FIFO Mechanisms], under major revision.
   -- ACM Conference on Economics and Computation (EC) 2022
   -- NBER Market Design Working Group 2021
@@ -33,6 +31,8 @@
   -- Best Data Exploration Award, Hubway Data Challenge, 2017.
 
 == Journal Publications
+
+- Yan, C., Johndrow, J., Woodard, D. and Sun, Y. [https://arxiv.org/abs/2112.09993 Efficiency of ETA Prediction], */SIAM Journal on Mathematics of Data Science (SIMODS)/*, accepted. \[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
 
 - Yang, Y., Yan, C., Cao, Y. and Roberti R., [https://www.sciencedirect.com/science/article/abs/pii/S0377221723001649 Planning Robust Drone-Truck Delivery Routes Under Road Traffic Uncertainty], */European Journal of Operational Research/*, 309(3): 1145-1160, 2023.
 
