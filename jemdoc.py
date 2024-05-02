@@ -26,21 +26,21 @@ import sys
 import os
 import re
 import time
-import StringIO
+import io
 from subprocess import *
 import tempfile
 
 def info():
-  print __doc__
-  print 'Platform: ' + sys.platform + '.'
-  print 'Python: %s, located at %s.' % (sys.version[:5], sys.executable)
-  print 'Equation support:',
+  print(__doc__)
+  print('Platform: ' + sys.platform + '.')
+  print('Python: %s, located at %s.' % (sys.version[:5], sys.executable))
+  print('Equation support:', end=' ')
   (supported, message) = testeqsupport()
   if supported:
-    print 'yes.'
+    print('yes.')
   else:
-    print 'no.'
-  print message
+    print('no.')
+  print(message)
 
 def testeqsupport():
   supported = True
@@ -94,21 +94,31 @@ class controlstruct(object):
 def showhelp():
   a = """Usage: jemdoc [OPTIONS] [SOURCEFILE] 
   Produces html markup from a jemdoc SOURCEFILE.
+
   Most of the time you can use jemdoc without any additional flags.
   For example, typing
+
     jemdoc index
+
   will produce an index.html from index.jemdoc, using a default
   configuration.
+
   Some configuration options can be overridden by specifying a
   configuration file.  You can use
+
     jemdoc --show-config
+
   to print a sample configuration file (which includes all of the
   default options). Any or all of the configuration [blocks] can be
   overwritten by including them in a configuration file, and running,
   for example,
+
     jemdoc -c mywebsite.conf index.jemdoc 
+
   You can view version and installation details with
+
     jemdoc --version
+
   See http://jemdoc.jaboc.net/ for many more details."""
   b = ''
   for l in a.splitlines(True):
@@ -117,7 +127,7 @@ def showhelp():
     else:
       b += l
 
-  print b
+  print(b)
 
 def standardconf():
   a = """[firstbit]
@@ -134,8 +144,10 @@ def standardconf():
   [windowtitle]
   # used in header for window title.
   <title>|</title>
+
   [fwtitlestart]
   <div id="fwtitle">
+
   [fwtitleend]
   </div>
   
@@ -176,10 +188,13 @@ def standardconf():
   
   [menucategory]
   <div class="menu-category">|</div>
+
   [menuitem]
   <div class="menu-item"><a href="|1">|2</a></div>
+
   [specificcss]
   <link rel="stylesheet" href="|" type="text/css" />
+
   [specificjs]
   <script src="|.js" type="text/javascript"></script>
   
@@ -238,8 +253,10 @@ def standardconf():
   
   [lastupdated]
   Page generated |, by <a href="http://jemdoc.jaboc.net/">jemdoc</a>.
+
   [sourcelink]
   (<a href="|">source</a>)
+
   """
   b = ''
   for l in a.splitlines(True):
@@ -264,7 +281,7 @@ def raisejandal(msg, line=0):
   raise JandalError(s)
 
 def readnoncomment(f):
-  l = f.readline()
+  l = f.readline().decode(encoding='utf-8')
   if l == '':
     return l
   elif l[0] == '#': # jem: be a little more generous with the comments we accept?
@@ -276,7 +293,7 @@ def parseconf(cns):
   syntax = {}
   warn = False # jem. make configurable?
   # manually add the defaults as a file handle.
-  fs = [StringIO.StringIO(standardconf())]
+  fs = [io.BytesIO(bytes(standardconf(), encoding='utf-8'))]
   for sname in cns:
     fs.append(open(sname, 'rb'))
 
@@ -290,7 +307,7 @@ def parseconf(cns):
 
         s = ''
         l = readnoncomment(f)
-        while l not in ('\n', ''):
+        while l not in ('\r', '\n', ''):
           s += l
           l = readnoncomment(f)
 
@@ -364,7 +381,7 @@ def hb(f, tag, content1, content2=None):
 def pc(f, ditchcomments=True):
   """Peeks at next character in the file."""
   # Should only be used to look at the first character of a new line.
-  c = f.inf.read(1)
+  c = f.inf.read(1).decode(encoding='utf-8')
   if c: # only undo forward movement if we're not at the end.
     if ditchcomments and c == '#':
       l = nl(f)
@@ -400,7 +417,7 @@ def doincludes(f, l):
 
 def nl(f, withcount=False, codemode=False):
   """Get input file line."""
-  s = f.inf.readline()
+  s = f.inf.readline().decode(encoding='utf-8')
   if not s and f.otherfiles:
     f.nextfile()
     return nl(f, withcount, codemode)
@@ -443,10 +460,10 @@ def np(f, withcount=False, eatblanks=True):
   else:
     s = nl(f)
 
-  while pc(f) not in ('\n', '-', '.', ':', '', '=', '~', '{', '\\(', '\\)'):
+  while pc(f) not in ('\r', '\n', '-', '.', ':', '', '=', '~', '{', '\\(', '\\)'):
     s += nl(f)
 
-  while eatblanks and pc(f) == '\n':
+  while eatblanks and pc(f) in ('\n', '\r'):
     nl(f) # burn blank line.
 
   # in both cases, ditch the trailing \n.
@@ -514,8 +531,8 @@ def replaceequations(b, f):
         # Check that the tools we need exist.
         (supported, message) = testeqsupport()
         if not supported:
-          print 'WARNING: equation support disabled.'
-          print message
+          print('WARNING: equation support disabled.')
+          print(message)
           f.eqsupport = False
           return b
 
@@ -535,6 +552,7 @@ def replaceequations(b, f):
       eqtext = allreplace(eq)
       eqtext = eqtext.replace('\\', '')
       eqtext = eqtext.replace('\n', ' ')
+      eqtext = eqtext.replace('\r', ' ')
 
       # Double braces will cause problems with escaping of image tag.
       eqtext = eqtext.replace('{{', 'DOUBLEOPENBRACE')
@@ -928,7 +946,7 @@ def geneq(f, eq, dpi, wl, outname):
       if os.path.exists(eqname) and eqname in eqdepths:
         return (eqdepths[eqname], eqname)
     except IOError:
-      print 'eqdepthcache read failed.'
+      print('eqdepthcache read failed.')
 
   # Open tex file.
   tempdir = tempfile.gettempdir()
@@ -938,7 +956,7 @@ def geneq(f, eq, dpi, wl, outname):
 
   preamble = '\documentclass{article}\n'
   for p in f.eqpackages:
-    preamble += '\usepackage{%s}\n' % p
+    preamble += '\\usepackage{%s}\n' % p
   for p in f.texlines:
     # Replace \{ and \} in p with { and }.
     # XXX hack.
@@ -965,7 +983,7 @@ def geneq(f, eq, dpi, wl, outname):
     rc = p.wait()
     if rc != 0:
       for l in p.stdout.readlines():
-        print '  ' + l.rstrip()
+        print('  ' + l.rstrip())
       exts.remove('.tex')
       raise Exception('latex error')
 
@@ -975,7 +993,7 @@ def geneq(f, eq, dpi, wl, outname):
     p = Popen(dvicmd, shell=True, stdout=PIPE, stderr=PIPE)
     rc = p.wait()
     if rc != 0:
-      print p.stderr.readlines()
+      print(p.stderr.readlines())
       raise Exception('dvipng error')
     depth = int(p.stdout.readlines()[-1].split('=')[-1])
   finally:
@@ -992,7 +1010,7 @@ def geneq(f, eq, dpi, wl, outname):
       dc.write(eqname + ' ' + str(depth) + '\n')
       dc.close()
     except IOError:
-      print 'eqdepthcache update failed.'
+      print('eqdepthcache update failed.')
   return (depth, eqname)
 
 def dashlist(f, ordered=False):
@@ -1132,7 +1150,7 @@ def codeblock(f, g):
   if raw:
     return
   elif ext_prog:
-    print 'filtering through %s...' % ext_prog
+    print('filtering through %s...' % ext_prog)
 
     output,_ = Popen(ext_prog, shell=True, stdin=PIPE,
                      stdout=PIPE).communicate(buff)
@@ -1152,7 +1170,7 @@ def inserttitle(f, t):
     hb(f.outf, f.conf['doctitle'], t)
 
     # Look for a subtitle.
-    if pc(f) != '\n':
+    if pc(f) not in ('\n', '\r'):
       hb(f.outf, f.conf['subtitle'], br(np(f), f))
 
     hb(f.outf, f.conf['doctitleend'], t)
@@ -1172,7 +1190,7 @@ def procfile(f):
   js = []
   title = None
   while pc(f, False) == '#':
-    l = f.inf.readline()
+    l = f.inf.readline().decode(encoding='utf-8')
     f.linenum += 1
     if doincludes(f, l[1:]):
       continue
@@ -1359,7 +1377,7 @@ def procfile(f):
     elif p == '#':
       l = nl(f)
 
-    elif p == '\n':
+    elif p in ('\n', '\r'):
       nl(f)
 
     # look for blocks.
@@ -1485,7 +1503,7 @@ def main():
     showhelp()
     raise SystemExit
   if sys.argv[1] == '--show-config':
-    print standardconf()
+    print(standardconf())
     raise SystemExit
   if sys.argv[1] == '--version':
     info()
@@ -1535,8 +1553,8 @@ def main():
     else:
       thisout = outname
 
-    infile = open(inname, 'rUb')
-    outfile = open(thisout, 'w')
+    infile = open(inname, 'rb')
+    outfile = open(thisout, 'w', encoding='utf-8')
 
     f = controlstruct(infile, outfile, conf, inname)
     procfile(f)
