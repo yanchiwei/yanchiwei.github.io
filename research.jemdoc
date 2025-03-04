@@ -31,12 +31,14 @@
 - Castro, F., Frazier, P., Ma, H., Nazerzadeh, H. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], under major revision.
   -- EC 2021 Workshop on People-Centric Systems
 
-- Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing], under minor revision, */Manufacturing & Service Operations Management/*. \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
+
+
+== Journal Publications
+
+- Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 A Locational Demand Model for Bike-Sharing], forthcoming, */Manufacturing & Service Operations Management/*. \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
   -- Finalist, Best Applied Paper, INFORMS Workshop on Data Mining and Decision Analytics, 2023.
   -- Finalist, POMS-JD.com Best Data-Driven Research Paper Competition, 2019.
   -- Best Data Exploration Award, Hubway Data Challenge, 2017.
-
-== Journal Publications
 
 - Yan, C., Johndrow, J., Woodard, D. and Sun, Y., [https://epubs.siam.org/doi/full/10.1137/23M155699X Efficiency of ETA Prediction], */SIAM Journal on Mathematics of Data Science (SIMODS)/*, 6(2): 227-253, 2024. \[[https://arxiv.org/abs/2112.09993 arXiv]\]\[[https://github.com/yanchiwei/eta/blob/main/examples.ipynb Notebook]\]
 
