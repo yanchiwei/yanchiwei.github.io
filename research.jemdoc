@@ -13,10 +13,6 @@
 
 - Sun, Y., Sun, F., Yan, C. and Wu, J., [https://arxiv.org/abs/2502.12117 The Role of Prescreening in Auctions with Predictions].
 
-- Yan, C., Yan, J. and Shen, Y., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4551405 Pricing Shared Rides], under major revision. \[[https://github.com/syf19961002/SharedPricing Code&Data]\]\[[https://www.youtube.com/watch?v=PlFUC-8-5D8 My Talk@ITS Davis]\]
-  -- ACM Conference on Economics and Computation (EC) 2024
-  -- MSOM Sustainable Operations SIG 2024
-
 - Aouad, A., Sarıtaç, Ö. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4453799 Centralized versus Decentralized Pricing Controls for Dynamic Matching Platforms], under revision.
   -- ACM Conference on Economics and Computation (EC) 2023
 
@@ -37,6 +33,10 @@
 
 
 == Journal Publications
+
+- Yan, C., Yan, J. and Shen, Y., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4551405 Pricing Shared Rides], */Operations Research/*, forthcoming. \[[https://github.com/syf19961002/SharedPricing Code&Data]\]\[[https://www.youtube.com/watch?v=PlFUC-8-5D8 My Talk@ITS Davis]\]
+  -- ACM Conference on Economics and Computation (EC) 2024
+  -- MSOM Sustainable Operations SIG 2024
 
 - Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://pubsonline.informs.org/doi/full/10.1287/msom.2023.0306?af=R A Locational Demand Model for Bike-Sharing], */Manufacturing & Service Operations Management/*, forthcoming.\[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 SSRN]\] \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
   -- Finalist, Best Applied Paper, INFORMS Workshop on Data Mining and Decision Analytics, 2023.
