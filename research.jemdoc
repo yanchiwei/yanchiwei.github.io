@@ -13,7 +13,7 @@
 
 - Sun, Y., Sun, F., Yan, C. and Wu, J., [https://arxiv.org/abs/2502.12117 The Role of Prescreening in Auctions with Predictions].
 
-- Aouad, A., Sarıtaç, Ö. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4453799 Centralized versus Decentralized Pricing Controls for Dynamic Matching Platforms], under revision.
+- Aouad, A., Sarıtaç, Ö. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4453799 Centralized versus Decentralized Pricing Controls for Dynamic Matching Platforms], under revision. \[[https://github.com/omersaritac/De-Centralized-Pricing Code]\]
   -- ACM Conference on Economics and Computation (EC) 2023
 
 - Yan, C. and Ghate, A., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4197493 A Dynamic Model for Airline Fleeting and Scheduling], under major revision.
@@ -38,7 +38,7 @@
   -- ACM Conference on Economics and Computation (EC) 2024
   -- MSOM Sustainable Operations SIG 2024
 
-- Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://pubsonline.informs.org/doi/full/10.1287/msom.2023.0306?af=R A Locational Demand Model for Bike-Sharing], */Manufacturing & Service Operations Management/*, forthcoming.\[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 SSRN]\] \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
+- Xu, A., Yan, C., Goh, CY and Jaillet, P., [https://pubsonline.informs.org/doi/full/10.1287/msom.2023.0306?af=R A Locational Demand Model for Bike-Sharing], */Manufacturing & Service Operations Management/*, forthcoming. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3311371 SSRN]\] \[[https://github.com/angxu1/bike_sharing Code&Data]\] \[[https://yanchiwei.github.io/hubway2017/index.html Viz]\]
   -- Finalist, Best Applied Paper, INFORMS Workshop on Data Mining and Decision Analytics, 2023.
   -- Finalist, POMS-JD.com Best Data-Driven Research Paper Competition, 2019.
   -- Best Data Exploration Award, Hubway Data Challenge, 2017.
