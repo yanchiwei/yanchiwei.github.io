@@ -9,7 +9,7 @@
 
 - Chen, J., Yan, C. and Jiang, H., [https://arxiv.org/abs/2506.09924 On the Linear Programming Model for Dynamic Stochastic Matching and Its Application on Pricing].
 
-- Cerna, D., Yan, C. and Ma, H., An Equilibrium Solver for A Dynamic Queueing Game.
+- Cerna, D., Yan, C. and Ma, H., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5282750 An Equilibrium Solver for A Dynamic Queueing Game].
   -- ACM Conference on Economics and Computation (EC) 2025
 
 - Sun, Y., Liu, Z. and Yan, C., [https://arxiv.org/abs/2503.23139 On-Off Systems with Strategic Customers].
@@ -80,6 +80,8 @@
 - Yan, C., Jiang, H. and Xie, S., [http://www.sciencedirect.com/science/article/pii/S0191261513002208 Capacity optimization of an isolated intersection under the phase swap sorting strategy], */Transportation Research Part B: Methodological/*, 60: 85-106, 2014. \[[https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2261809 SSRN]\]\[[https://www.youtube.com/watch?v=a4RE-iFuhQc Video]\]
 
 == Conference Proceedings
+
+- Cerna, D., Yan, C. and Ma, H., [https://dl.acm.org/doi/abs/10.1145/3736252.3742608 An Equilibrium Solver for A Dynamic Queueing Game], 26th ACM Conference on Economics and Computation (EC '25), Stanford, CA, 2025.
 
 - Yan, C., Yan, J. and Shen, Y., [https://doi.org/10.1145/3670865.3673446 Pricing Shared Rides], 25th ACM Conference on Economics and Computation (EC '24), New Haven, CT, 2024.
 
