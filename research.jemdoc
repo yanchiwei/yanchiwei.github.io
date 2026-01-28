@@ -7,9 +7,6 @@
 
 == Working Papers
 
-- Shen, Y., Yan, C. and Yan, J., Calyber: A Ridesharing Game, under minor revision, */INFORMS Transactions on Education/*.
-  -- Runner-up, INFORMS Case Competition, 2025
-
 - Xu, A. and Yan, C., [http://arxiv.org/abs/2507.17983 Dispatching and Pricing in Two-Sided Spatial Queues], under major revision.
 
 - Cerna, D., Yan, C. and Ma, H., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5282750 An Equilibrium Solver for A Dynamic Queueing Game]. \[[https://github.com/denise-cerna/queue-equilibrium-solver/ Code]\]
@@ -36,12 +33,14 @@
   -- MSOM Service Management SIG 2021
   -- EC 2021 Workshop on Design of Online Platforms: Frontiers and Challenges 
 
-- Castro, F., Frazier, P., Ma, H., Nazerzadeh, H. and Yan, C., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], under minor revision, */Manufacturing & Service Operations Management/*.
-  -- EC 2021 Workshop on People-Centric Systems
-
-
 
 == Journal Publications
+
+- Shen, Y., Yan, C. and Yan, J., Calyber: A Ridesharing Game, */INFORMS Transactions on Education/*, forthcoming.
+  -- Runner-up, INFORMS Case Competition, 2025
+
+- Yan, C., Castro, F., Frazier, P., Ma, H. and Nazerzadeh, H., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3627920 Matching Queues, Flexibility and Incentives], */Manufacturing & Service Operations Management/*, forthcoming.
+  -- EC 2021 Workshop on People-Centric Systems
 
 - Sun, F., Sun, Y., Yan, C. and Jin, L., [https://arxiv.org/abs/2205.08104 Restricting Entries to All-Pay Contests], */International Journal of Game Theory/*, forthcoming.
   -- ACM Conference on Economics and Computation (EC) 2024
