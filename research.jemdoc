@@ -7,10 +7,13 @@
 
 == Working Papers
 
+- Gao, S., Cheng, H., Yan, C. and Jiang, G., [https://arxiv.org/abs/2604.21359 A Markovian Traffic Equilibrium Model for Ride-Hailing].
 
+- Shen, Y., Chen, J., Yan, J., and Yan, C., [https://arxiv.org/abs/2604.17552 On-Trip Matching and Pricing for Shared Rides], under major revision.
 
 - Cerna, D., Yan, C. and Ma, H., [https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5282750 An Equilibrium Solver for A Dynamic Queueing Game]. \[[https://github.com/denise-cerna/queue-equilibrium-solver/ Code]\]
   -- ACM Conference on Economics and Computation (EC) 2025
+  -- The Katta G. Murty Prize (awarded to Denise Cerna)
 
 - Chen, J., Yan, C. and Jiang, H., [https://arxiv.org/abs/2506.09924 On the Linear Programming Model for Dynamic Stochastic Matching and Its Application to Pricing]. \[[https://github.com/chen-jl99/pricing-dynamic-matching Code]\]
 
